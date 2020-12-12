@@ -20,7 +20,7 @@ command -v optipng >/dev/null 2>&1 || { echo >&2 "Package optipng is require but
 
 # Set variables, you can customize them according to their preferences
 JPEGOPTIM_ARGS="--strip-all --overwrite --threshold=2 --max=80 --totals --all-progressive"
-OPTIPNG_ARGS="-o7 -f4 -strip all -quiet -preserve"
+OPTIPNG_ARGS="-o7 -f4 -strip all -clobber"
 
 # Start optimization and compression
 if [ -n "$1" ]; then
