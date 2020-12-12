@@ -14,6 +14,10 @@ NC='\033[0m'
 BOLD='\e[1m'
 NORMAL='\e[0m'
 
+# Check dependencies
+command -v jpegoptim >/dev/null 2>&1 || { echo >&2 "Package jpegoptim is required but not installed. Aborting."; exit 1; }
+command -v optipng >/dev/null 2>&1 || { echo >&2 "Package optipng is require but not installed. Aborting."; exit 1; }
+
 # Set variables, you can customize them according to their preferences
 JPEGOPTIM_ARGS="--strip-all --overwrite --threshold=2 --max=80 --totals --all-progressive"
 OPTIPNG_ARGS="-o7 -f4 -strip all -quiet -preserve"
@@ -42,7 +46,7 @@ if [ -n "$1" ]; then
         optipng $OPTIPNG_ARGS $i
     done
 else
-    echo -e "${RED}Failure, path parameter is not defined${NC}"
+    echo -e "${RED}Path parameter was not defined${NC}"
     echo "        Usage: Optimization images newer 24 hours for cronjob batch processing"
     echo -e "                 ${BOLD}optimize-images.sh /path/to/image-directory/${NORMAL}"
     echo "               Force optimization for all images inside given folder"
