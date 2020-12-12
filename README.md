@@ -83,7 +83,7 @@ As you can see, the total size has been reduced from 7276 kb to 5452 kb, visuall
 Add that to your crontab and you never have to think about it again.
 ```
 $ crontab -l
-@NIGHTLY root /root/optimize-images/optimize-images.sh /path/to/image-directory/ >/dev/null 2>&1
+@daily root /root/optimize-images/optimize-images.sh /path/to/image-directory/ >/dev/null 2>&1
 ```
 
 ## LICENSE
