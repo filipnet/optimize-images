@@ -1,14 +1,14 @@
 # optimize-images
-Optimize and Compress JPEG or PNG Images in Linux command line
+Optimize and compress JPEG or PNG images in Linux command line
 
 > **⚠ WARNING, IMPORTANT NOTICE BEFORE USE**  
 > Before running any of this script, please make sure you have a valid backup, cause the script will replaces the original file, so you no longer have the original.
 
 ## FEATURES
-You have a lot of images, and want to optimize and compress the images without losing its original quality?
+You have a lot of images and would like to optimize and compress the images without losing its original quality?
 
 This script solution can be used:
-- before uploading them to any cloud storages or content management system 
+- before uploading images to any cloud storages or content management system 
 - to optimize and compress images, that are already uploaded and active on a webserver
 
 I use WordPress and love it, but the Image Optimization Plugins are not free, limited or buggy. If you have root access to your webserver, this script will help you to optimize the images. The following command line utilities to optimize images are used:
@@ -16,15 +16,15 @@ I use WordPress and love it, but the Image Optimization Plugins are not free, li
 - jpegoptim – is a utility to optimize/compress JPEG files without loosing quality
 - OptiPNG – is a small program that optimize PNG images to smaller size without losing any information
 
-Please note that OptiPNG evaluates and processes the PNG image file individually on each call, and acts much slower here than is the case with JPG files.
+Please note that OptiPNG evaluates and processes the PNG image file individually on each call and acts much slower here than is the case with JPG files.
 
 ## INSTALL PREREQUISITES
-On Debian and it’s Derivatives
+On Debian and it’s derivatives
 ```
 sudo apt-get install jpegoptim
 sudo apt-get install optipng
 ```
-On RedHat based Systems
+On RedHat based systems
 ```
 yum install epel-release
 yum install jpegoptim
@@ -36,7 +36,7 @@ yum install optipng
 cd /root; git clone https://github.com/filipnet/optimize-images.git
 ```
 
-## SETUP OF A TEST ENVIRONMENT
+## SETUP A TEST ENVIRONMENT
 It allows you to download a World Wide Web site from the Internet to a local directory, building recursively all directories, getting HTML, images, and other files from the server to your computer. HTTrack arranges the original site's relative link-structure. Simply open a page of the "mirrored" website in your browser, and you can browse the site from link to link, as if you were viewing it online. HTTrack can also update an existing mirrored site, and resume interrupted downloads. HTTrack is fully configurable, and has an integrated help system. (Source: https://www.httrack.com/)
 ```
 # Install httrack
