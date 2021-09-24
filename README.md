@@ -4,6 +4,20 @@ Optimize and compress JPEG or PNG images in Linux command line
 > **⚠ WARNING, IMPORTANT NOTICE BEFORE USE**  
 > Before running any of this script, please make sure you have a valid backup, cause the script will replaces the original file, so you no longer have the original.
 
+<!-- TOC -->
+
+- [optimize-images](#optimize-images)
+    - [FEATURES](#features)
+    - [INSTALL PREREQUISITES](#install-prerequisites)
+    - [INSTALL SCRIPT](#install-script)
+    - [SETUP A TEST ENVIRONMENT](#setup-a-test-environment)
+    - [USAGE](#usage)
+    - [WORDPRESS EXAMPLE](#wordpress-example)
+    - [ADD TO CRONTAB](#add-to-crontab)
+    - [LICENSE](#license)
+
+<!-- /TOC -->
+
 ## FEATURES
 You have a lot of images and would like to optimize and compress the images without losing its original quality?
 
